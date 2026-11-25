@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf6ef">
+  <link rel="icon" type="image/webp" href="/mark.webp">
+  <meta name="description" content="ABHEDIT helps IT and finance teams see where AI spend goes, identify waste, and set manageable budgets.">
+  <title>AI Cost Optimization | ABHEDIT</title>
+  <script type="module" src="/src.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#overview" aria-label="ABHEDIT home"><img src="/mark.webp" alt="">ABHEDIT</a>
+    <nav aria-label="Main navigation">
+      <a href="#overview" class="active">Overview</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="button compact" type="button" data-consult>Request a consultation</button>
+  </header>
+  <main id="main">
+    <section class="hero" id="overview" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <h1 id="hero-title">Know what AI costs your business.</h1>
+          <p>See where AI spend goes, identify waste, and set budgets your teams can manage.</p>
+          <button class="button" type="button" data-consult>Request a consultation <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+        </div>
+        <div class="breakdown">
+          <div class="breakdown-header"><h2>AI Spend Breakdown</h2><span class="sample">Illustrative data</span></div>
+          <div class="breakdown-body">
+            <div class="donut">
+              <canvas width="360" height="360" aria-hidden="true"></canvas>
+              <div><strong>$87,420</strong><span>Total AI Spend</span></div>
+            </div>
+            <dl class="legend">
+              <div><dt><span class="swatch models"></span>Models</dt><dd>$52,300</dd><dd>60%</dd></div>
+              <div><dt><span class="swatch licenses"></span>Licenses</dt><dd>$21,400</dd><dd>24%</dd></div>
+              <div><dt><span class="swatch agents"></span>Agents</dt><dd>$13,720</dd><dd>16%</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrap benefits" aria-label="What you can do">
+      <article><i class="ph-fill ph-chart-bar" aria-hidden="true"></i><h2>Track usage</h2><p>Get a clear view of AI spend across models, licenses, and agents, by team or project.</p></article>
+      <article><i class="ph ph-magnifying-glass" aria-hidden="true"></i><h2>Find savings</h2><p>Spot underused licenses, inefficient model usage, and other costs you can reduce.</p></article>
+      <article><i class="ph ph-stack" aria-hidden="true"></i><h2>Set budgets</h2><p>Define spending limits by team and keep AI costs in line with business priorities.</p></article>
+    </section>
+    <section class="process" id="how-it-works" aria-labelledby="process-title">
+      <div class="wrap">
+        <h2 class="section-title" id="process-title">How it works</h2>
+        <ol class="steps">
+          <li><div class="step-top"><span>1</span></div><h3>Connect</h3><p>Bring in AI usage and spend data from the tools you already use.</p></li>
+          <li><div class="step-top"><span>2</span></div><h3>Analyze</h3><p>See costs, usage patterns, and opportunities to save in one place.</p></li>
+          <li><div class="step-top"><span>3</span></div><h3>Control</h3><p>Set budgets and policies to keep spending aligned with your priorities.</p></li>
+        </ol>
+        <div class="dashboard" aria-label="Interactive example of team spending">
+          <div class="dashboard-side">
+            <span class="wordmark"><img src="/mark-light.webp" alt="">ABHEDIT</span>
+            <div class="dashboard-nav" aria-label="Example views">
+              <button type="button" data-view="spend" aria-pressed="true"><i class="ph ph-chart-bar" aria-hidden="true"></i>Spend</button>
+              <button type="button" data-view="usage" aria-pressed="false"><i class="ph ph-stack" aria-hidden="true"></i>Usage</button>
+              <button type="button" data-view="budgets" aria-pressed="false"><i class="ph ph-shield-check" aria-hidden="true"></i>Budgets</button>
+              <button type="button" data-view="teams" aria-pressed="false"><i class="ph ph-users" aria-hidden="true"></i>Teams</button>
+            </div>
+          </div>
+          <div class="dashboard-main">
+            <div class="dashboard-header"><h3 id="table-title">Spend by Team</h3><label class="period"><i class="ph ph-calendar-blank" aria-hidden="true"></i><select id="period" aria-label="Reporting period"><option value="current">This month</option><option value="previous">Last month</option></select></label></div>
+            <div class="table-scroll" tabindex="0" role="region" aria-labelledby="table-title"><table aria-labelledby="table-title"><thead></thead><tbody></tbody></table></div>
+            <p class="table-note">Illustrative data</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="wrap faq" aria-labelledby="faq-title">
+      <h2 class="section-title" id="faq-title">FAQ</h2>
+      <div>
+        <details name="faq"><summary>What data do we need to get started?<i class="ph ph-caret-down" aria-hidden="true"></i></summary><p>Start with recent invoices, license counts, and any usage reports you already have. These can help identify your biggest costs and where more detail would be useful.</p></details>
+        <details name="faq"><summary>Can we set budgets by team or project?<i class="ph ph-caret-down" aria-hidden="true"></i></summary><p>Yes. Use team or project spend to set budgets, assign owners, and agree when to review unexpected changes.</p></details>
+        <details name="faq"><summary>How quickly will we see results?<i class="ph ph-caret-down" aria-hidden="true"></i></summary><p>Timing depends on how readily you can access usage and billing data. A first review can surface unused licenses and unusual spikes worth investigating.</p></details>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <h2>Get clarity on your AI spend.</h2>
+    <button class="button inverse" type="button" data-consult>Request a consultation <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+  </footer>
+  <dialog id="consultation" aria-labelledby="consult-title">
+    <form id="consult-form">
+      <button type="button" class="close" aria-label="Close consultation form"><i class="ph ph-x" aria-hidden="true"></i></button>
+      <h2 id="consult-title">Request a consultation</h2>
+      <p>Tell us what you’d like to review. This preview lets you download a draft of your request.</p>
+      <label>Full name<input name="name" autocomplete="name" required></label>
+      <label>Work email<input type="email" name="email" autocomplete="email" required></label>
+      <label>Company<input name="company" autocomplete="organization" required></label>
+      <label>What would you like to review?<textarea name="message" rows="3"></textarea></label>
+      <button type="submit" class="button">Download request draft</button>
+      <p class="form-status" role="status"></p>
+    </form>
+  </dialog>
+</body>
+</html>
